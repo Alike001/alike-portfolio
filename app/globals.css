@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --ink: #0a0a0f;
+  --indigo: #6366f1;
+  --cyan: #06b6d4;
+  --cloud: #f1f5f9;
+  --card: #111827;
+  --line: #1e293b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ink);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 78% 2%, rgba(99, 102, 241, .12), transparent 28rem),
+    radial-gradient(circle at 8% 54%, rgba(6, 182, 212, .055), transparent 24rem),
+    var(--ink);
+  color: var(--cloud);
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  content: "";
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--cyan);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  background: linear-gradient(var(--indigo), var(--cyan));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container-shell {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.section-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, .22), transparent);
+}
+
+.text-gradient {
+  background: linear-gradient(112deg, #f8fafc 8%, #a5b4fc 48%, #67e8f9 94%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, .065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, .065) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.9), transparent 92%);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
