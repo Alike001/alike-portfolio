@@ -1,18 +1,18 @@
 export const journey = [
   {
-    date: "Oct / Nov 2025",
-    title: "Started with Web2 fundamentals",
-    detail: "Began learning HTML, CSS, and JavaScript as the first step into software development."
+    date: "October 2025",
+    title: "Finished my first degree",
+    detail: "Completed a BSc in Physics, Second Class Upper, at Lagos State University."
   },
   {
-    date: "Early 2026",
-    title: "Found blockchain",
-    detail: "Discovered the systems side of Web3 and began studying smart contracts with a mentor."
+    date: "Late 2025",
+    title: "Started with blockchain basics",
+    detail: "Began my tech journey with Cyfrin, studying blockchain fundamentals and Solidity."
   },
   {
-    date: "Mid 2026",
-    title: "Made the transition",
-    detail: "Completed a Web2 program and was selected for the Web3Bridge Web3 program."
+    date: "January – April 2026",
+    title: "Completed Web2 Advanced Cohort XIV",
+    detail: "Moved into HTML, CSS, and JavaScript through Web3Bridge's fully online Web2 program after registering in 2025."
   },
   {
     date: "July 2026",

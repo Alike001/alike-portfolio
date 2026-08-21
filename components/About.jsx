@@ -61,8 +61,8 @@ export default function About() {
               <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[.23em] text-cyan"><span className="h-px w-9 bg-cyan" />A deliberate transition</div>
               <h2 className="max-w-2xl font-display text-4xl leading-[.98] tracking-[-.045em] text-cloud sm:text-6xl">I am learning to make the complicated feel <span className="text-gradient">clear.</span></h2>
               <div className="mt-9 space-y-5 text-[15px] leading-8 text-muted sm:text-base">
-                <p>I started my tech journey in October 2025 — beginning with Web2 fundamentals before discovering my passion for blockchain and Web3. With a background in Physics (BSc Second Class Upper, LASU 2026), I made a deliberate transition into smart contract development.</p>
-                <p>I am currently undergoing Web3Bridge Cohort XV — a 16-week intensive onsite Solidity engineering program in Lagos. I build in the open, write about what I learn, and compete in hackathons to sharpen my skills.</p>
+                <p>I finished my first degree, a BSc in Physics (Second Class Upper) at Lagos State University, in October 2025. After that, I started with Cyfrin&apos;s blockchain fundamentals and Solidity material.</p>
+                <p>I later moved into Web2 to strengthen my HTML, CSS, and JavaScript foundations, completing Web3Bridge&apos;s fully online Web2 Advanced Cohort XIV from January to April 2026. I am now in Web3Bridge Cohort XV, a 16-week intensive onsite Solidity engineering program in Lagos. I build in the open, write about what I learn, and compete in hackathons to sharpen my skills.</p>
               </div>
               <div className="mt-10 grid grid-cols-2 gap-3 border-t border-line/80 pt-5 sm:grid-cols-4 sm:gap-4">
                 {stats.map(([value, label, Icon, suffix], index) => (

@@ -24,22 +24,25 @@ export const projects = [
     description: "An on-chain student registration system deployed and verified on the Ethereum Sepolia testnet.",
     tech: ["Solidity", "Hardhat", "ethers.js"],
     deployed: "Ethereum Sepolia",
+    status: "Personal project · public repo",
     github: "https://github.com/Alike001/StudentRegPortal",
     accent: "indigo"
   },
   {
     name: "CrowdfundingDapp",
     eyebrow: "Smart Contract",
-    description: "A decentralized crowdfunding contract built while developing practical Solidity and Hardhat fluency.",
+    description: "A decentralized crowdfunding contract I created as a practical Solidity and Hardhat project.",
     tech: ["Solidity", "Hardhat"],
+    status: "Personal project · public repo",
     github: "https://github.com/Alike001/CrowdfundingDapp",
     accent: "cyan"
   },
   {
     name: "Multi-Network Deployments",
     eyebrow: "Deployment Practice",
-    description: "Smart contracts deployed across Celo Sepolia and Mantle Sepolia testnets using Hardhat Ignition.",
+    description: "Smart contracts I deployed across Celo Sepolia and Mantle Sepolia testnets using Hardhat Ignition.",
     tech: ["Solidity", "Hardhat Ignition", "Celo", "Mantle"],
+    status: "Personal project · public repo",
     github: "https://github.com/Alike001",
     accent: "indigo"
   }
