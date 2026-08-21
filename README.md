@@ -1,75 +1,33 @@
 # Alike — Web3 Engineer Portfolio
 
-A dark, editorial portfolio for Hammed Ali Oyeleye (Alike), a Web3 engineer in training from Lagos, Nigeria. The site is built with Next.js 14 App Router, Tailwind CSS, Framer Motion, React Icons, and `next/font`.
+Personal portfolio for Hammed Ali Oyeleye (Alike), a Web3 engineer in training from Lagos, Nigeria.
 
-## Run locally
+The site presents selected Solidity, blockchain tooling, MCP, deployment, writing, and competition work. It is built with Next.js 14 App Router, Tailwind CSS, Framer Motion, React Icons, and `next/font`.
 
-Install the dependencies:
+## Local development
+
+Requirements: Node.js 18+ and npm.
 
 ```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-Create a production build locally:
+Run the production checks locally:
 
 ```bash
+npm run lint
 npm run build
 npm run start
 ```
 
+No environment variables are required.
+
 ## Deploy to Vercel
 
-1. Push this project to a GitHub repository.
-2. Sign in at [vercel.com](https://vercel.com) and choose **Add New Project**.
-3. Import the GitHub repository.
-4. Keep the detected framework as **Next.js**.
-5. Leave the build command and output settings at their defaults.
-6. Click **Deploy**.
-7. Each new push to the connected production branch will trigger a new deployment.
-
-The project does not require environment variables.
-
-## Connect a custom domain on Vercel
-
-1. Open the project in Vercel.
-2. Go to **Settings → Domains**.
-3. Enter the domain you own and click **Add**.
-4. Copy the DNS records Vercel displays.
-5. Add those records at your domain registrar. Vercel commonly uses an `A` record for the apex domain and a `CNAME` record for `www`, but follow the exact values shown in your dashboard.
-6. Return to Vercel and wait for DNS verification.
-7. Choose the preferred domain and enable HTTPS after verification.
-
-## Update portfolio content
-
-- Edit project cards in [`data/projects.js`](./data/projects.js).
-- Edit skill groups and labels in [`data/skills.js`](./data/skills.js).
-- Edit the timeline in [`data/journey.js`](./data/journey.js).
-- Edit the article list in [`components/Writing.jsx`](./components/Writing.jsx).
-- Edit personal metadata in [`app/layout.js`](./app/layout.js).
-
-## Exact terminal commands
-
-Install all dependencies:
-
-```bash
-npm install
-```
-
-Run locally:
-
-```bash
-npm run dev
-```
-
-Deploy with the Vercel CLI:
+### Vercel CLI
 
 ```bash
 npm install --global vercel
@@ -78,4 +36,34 @@ vercel
 vercel --prod
 ```
 
-The alias is written as **Alike** throughout the portfolio.
+### Vercel dashboard
+
+1. Open [vercel.com/new](https://vercel.com/new).
+2. Import the GitHub repository.
+3. Keep the detected framework as **Next.js**.
+4. Leave the default build settings unchanged.
+5. Select **Deploy**.
+
+New pushes to the connected production branch can trigger deployments automatically.
+
+## Add a custom domain
+
+1. Open the project in Vercel and go to **Settings → Domains**.
+2. Add the domain you own.
+3. Copy the DNS records Vercel provides into your domain registrar.
+4. Wait for verification, then select the preferred domain.
+
+## Update the portfolio
+
+- Projects: [`data/projects.js`](./data/projects.js)
+- Skills: [`data/skills.js`](./data/skills.js)
+- Timeline: [`data/journey.js`](./data/journey.js)
+- Articles: [`components/Writing.jsx`](./components/Writing.jsx)
+- Personal metadata and SEO: [`app/layout.js`](./app/layout.js)
+
+Each section is a separate component under [`components/`](./components/).
+
+## Links
+
+- GitHub: https://github.com/Alike001
+- Live site: https://portfolio-five-alpha-cor4xs15f8.vercel.app

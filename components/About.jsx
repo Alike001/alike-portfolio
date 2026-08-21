@@ -6,10 +6,10 @@ import { FiAward, FiBookOpen, FiCode, FiGitBranch } from "react-icons/fi";
 import Reveal from "./Reveal";
 
 const stats = [
-  ["16", "Solidity Program", FiBookOpen, "weeks"],
-  ["2", "Hackathon Wins", FiAward, "wins"],
-  ["5", "Contracts Deployed", FiCode, "+ contracts"],
-  ["55", "GitHub Repos", FiGitBranch, "+ repos"]
+  ["16", "Solidity Program", FiBookOpen, "-week"],
+  ["2", "Competition Awards", FiAward, ""],
+  ["5", "Contracts Deployed", FiCode, "+"],
+  ["55", "GitHub Repos", FiGitBranch, "+"]
 ];
 
 function Counter({ value, suffix }) {
@@ -32,7 +32,7 @@ function Counter({ value, suffix }) {
     return () => cancelAnimationFrame(frame);
   }, [isInView, value]);
 
-  return <span ref={ref}>{count}{suffix === "weeks" ? "-week" : suffix === "wins" ? "" : "+"}</span>;
+  return <span ref={ref}>{count}{suffix}</span>;
 }
 
 export default function About() {

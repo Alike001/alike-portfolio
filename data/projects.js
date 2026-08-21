@@ -42,8 +42,7 @@ export const projects = [
     eyebrow: "Deployment Practice",
     description: "Smart contracts I deployed across Celo Sepolia and Mantle Sepolia testnets using Hardhat Ignition.",
     tech: ["Solidity", "Hardhat Ignition", "Celo", "Mantle"],
-    status: "Personal project · public repo",
-    github: "https://github.com/Alike001",
+    status: "Personal deployment work · proof available on request",
     accent: "indigo"
   }
 ];
