@@ -5,17 +5,17 @@ export const projects = [
     description: "Integrated Ledger hardware wallet signing into an AI agent workflow using MCP server architecture for secure on-chain transaction authorization.",
     tech: ["Node.js", "MCP protocol", "Ledger SDK"],
     achievement: "$100 USDC bounty · Ledger N3XT Build & Show",
-    github: "https://github.com/Alike001",
+    github: "https://github.com/Alike001/signet",
     accent: "cyan"
   },
   {
-    name: "Kwala AI",
-    eyebrow: "Blockchain MCP Server",
-    description: "An MCP server for blockchain automation on Kwala Network, enabling AI agents to interact with blockchain infrastructure.",
-    tech: ["Node.js", "MCP protocol", "Kwala Network API"],
-    achievement: "Winning team · SchullTech x Kwala Hackathon",
-    team: true,
-    github: "https://github.com/Alike001",
+    name: "AgentPay Casper",
+    eyebrow: "AI Agent Payments",
+    description: "A Casper-based payment authorization system where wallet owners define spending mandates and deterministic policies constrain what AI agents can do.",
+    tech: ["Casper", "Odra", "MCP", "Node.js"],
+    deployed: "Casper Testnet",
+    status: "Public repository · MIT",
+    github: "https://github.com/Alike001/agentpay-casper",
     accent: "indigo"
   },
   {
