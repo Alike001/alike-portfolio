@@ -1,27 +1,25 @@
-# Alike — Portfolio
+# Alike — Software & Web3 Portfolio
 
-Portfolio of **Hammed Ali Oyeleye**, a software and Web3 developer.
+Personal portfolio of **Hammed Ali Oyeleye (Alike)**, a software developer building across payments, security and Web3.
 
 **Website:** https://iamalikex.tech
 
-## About
+## Selected work
 
-Physics graduate (BSc, Second Class Upper, Lagos State University) and Web3Bridge trainee building practical software in payments, blockchain and security.
+| Project | What it does | Code |
+| --- | --- | --- |
+| Zecceipt | Verifies Zcash Testnet payments and issues merchant receipts | [Repository](https://github.com/Alike001/zecceipt) |
+| ReserveRail | Testnet reserve, minting and redemption pilot on HSK Chain | [Repository](https://github.com/Alike001/reserverail-hsk) |
+| SaySure | Buyer-controlled payment-request review with passkey-backed consent | [Repository](https://github.com/Alike001/saysure) |
+| OyaCheck | Explains phishing warning signs in English and Nigerian Pidgin | [Repository](https://github.com/Alike001/oyacheck) |
 
-## Featured projects
+**Team achievements:** 1st place at Zcash Mini Hackathon (Zecceipt), and 3rd place at EAG Hackathon's HSK track (ReserveRail), both in person in August 2026.
 
-- **[Zecceipt](https://github.com/Alike001/zecceipt)** — Zcash Testnet payment verification and receipts.
-- **[ReserveRail](https://github.com/Alike001/reserverail-hsk)** — Stablecoin issuance and reserve-verification pilot on HSK.
-- **[SaySure](https://github.com/Alike001/saysure)** — Buyer-controlled payment-request review.
-- **[OyaCheck](https://github.com/Alike001/oyacheck)** — Phishing warning explanations in English and Nigerian Pidgin.
-
-**Team awards (August 2026, in person):** 1st place, Zcash Mini Hackathon (Zecceipt); 3rd place, EAG Hackathon HSK track (ReserveRail).
-
-Open-source contributions: [Ethereum.org](https://github.com/ethereum/ethereum-org-website/pull/19742) and [Erigon](https://github.com/erigontech/erigon/pull/26084).
+**Upstream open source:** Merged PRs in [Ethereum.org](https://github.com/ethereum/ethereum-org-website/pull/19742) and [Erigon](https://github.com/erigontech/erigon/pull/26084).
 
 ## Development
 
-Built with Next.js, Tailwind CSS and React.
+Built with Next.js, Tailwind CSS and Framer Motion.
 
 ```bash
 npm ci
@@ -30,6 +28,8 @@ npm run lint
 npm run build
 ```
 
-Edit the featured projects in `data/projects.js`. The site is deployed to Vercel using the domain `iamalikex.tech`.
+Projects are configured in `data/projects.js`. The current deployment is hosted on Vercel at **iamalikex.tech**. Project artwork is illustrative; follow the live-project and source-code links for actual implementations.
 
-**Contact:** [LinkedIn](https://www.linkedin.com/in/ali-hammed-9b5347255/) · [GitHub](https://github.com/Alike001)
+## Connect
+
+[GitHub](https://github.com/Alike001) · [LinkedIn](https://www.linkedin.com/in/ali-hammed-9b5347255/) · [Email](mailto:hammedoye10@gmail.com)
