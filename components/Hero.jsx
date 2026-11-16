@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { FiArrowDownRight, FiArrowUpRight, FiBookOpen, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
-const roles = ["Web3 Engineer", "Solidity Developer", "MCP Builder", "Builder from Lagos"];
+const roles = ["Software Developer", "Web3 Engineer", "Open-source Contributor", "Builder from Nigeria"];
 const socials = [
   ["GitHub", "https://github.com/Alike001", FiGithub],
   ["X", "https://x.com/IamAlikeX", FiTwitter],
@@ -106,8 +106,8 @@ export default function Hero() {
             Hammed Ali <span className="text-gradient">Oyeleye</span>
           </motion.h1>
           <motion.div variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }} className="mt-8 flex items-end justify-between gap-6 border-t border-line/80 pt-5 sm:mt-10">
-            <p className="max-w-md text-base leading-7 text-muted sm:text-lg sm:leading-8">Physics graduate building the decentralized future from Lagos, Nigeria.</p>
-            <div className="hidden text-right sm:block"><p className="font-display text-2xl font-medium text-cloud">Alike</p><p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted">Engineer in training</p></div>
+            <p className="max-w-md text-base leading-7 text-muted sm:text-lg sm:leading-8">Physics graduate building dependable software, payment workflows and verifiable systems.</p>
+            <div className="hidden text-right sm:block"><p className="font-display text-2xl font-medium text-cloud">Alike</p><p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-muted">Building in public</p></div>
           </motion.div>
           <motion.div variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }} className="mt-9 flex flex-wrap gap-3">
             <a href="#projects" className="focus-ring group inline-flex items-center gap-3 rounded-full bg-cloud px-5 py-3.5 text-sm font-semibold text-ink transition-transform hover:-translate-y-1">View my work <FiArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></a>
@@ -118,11 +118,11 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .65, duration: .8 }} className="relative lg:pb-2">
           <div className="absolute -left-5 top-8 hidden h-px w-16 bg-gradient-to-r from-transparent to-cyan/70 lg:block" />
           <div className="rounded-[2rem] border border-line/80 bg-card/65 p-5 shadow-aura backdrop-blur-md sm:p-7">
-            <div className="mb-8 flex items-center justify-between border-b border-line/80 pb-4 text-[10px] uppercase tracking-[0.2em] text-muted"><span>Currently building</span><span className="flex items-center gap-2 text-cyan"><i className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" /> Lagos, NG</span></div>
-            <p className="font-display text-2xl leading-tight tracking-tight text-cloud sm:text-3xl">Learning the craft of making contracts, agents, and networks work together.</p>
+            <div className="mb-8 flex items-center justify-between border-b border-line/80 pb-4 text-[10px] uppercase tracking-[0.2em] text-muted"><span>Selected focus</span><span className="flex items-center gap-2 text-cyan"><i className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" /> Nigeria</span></div>
+            <p className="font-display text-2xl leading-tight tracking-tight text-cloud sm:text-3xl">I build, test and ship practical tools across payments, blockchain and digital safety.</p>
             <div className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line">
               <div className="bg-ink/70 p-4"><p className="text-[10px] uppercase tracking-[0.18em] text-muted">Program</p><p className="mt-3 font-display text-lg text-cloud">Web3Bridge XV</p></div>
-              <div className="bg-ink/70 p-4"><p className="text-[10px] uppercase tracking-[0.18em] text-muted">Focus</p><p className="mt-3 font-display text-lg text-cloud">Solidity + MCP</p></div>
+              <div className="bg-ink/70 p-4"><p className="text-[10px] uppercase tracking-[0.18em] text-muted">Focus</p><p className="mt-3 font-display text-lg text-cloud">Full stack + Web3</p></div>
             </div>
           </div>
           <div className="mt-5 flex items-center justify-between">

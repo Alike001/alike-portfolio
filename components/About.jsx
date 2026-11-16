@@ -2,14 +2,14 @@
 
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { FiAward, FiBookOpen, FiCode, FiGitBranch } from "react-icons/fi";
+import { FiAward, FiBookOpen, FiGitBranch } from "react-icons/fi";
 import Reveal from "./Reveal";
 
 const stats = [
-  ["16", "Solidity Program", FiBookOpen, "-week"],
-  ["2", "Competition Awards", FiAward, ""],
-  ["5", "Contracts Deployed", FiCode, "+"],
-  ["55", "GitHub Repos", FiGitBranch, "+"]
+  ["1", "Zcash team finish", FiAward, "st"],
+  ["3", "HSK team finish", FiAward, "rd"],
+  ["3", "Upstream PRs merged", FiGitBranch, ""],
+  ["16", "Solidity training", FiBookOpen, " weeks"]
 ];
 
 function Counter({ value, suffix }) {
@@ -52,7 +52,7 @@ export default function About() {
                   <div className="absolute right-9 top-9 h-6 w-6 rounded-full border border-cyan/60" />
                 </div>
               </div>
-              <p className="mt-7 text-center text-xs uppercase tracking-[.2em] text-muted lg:text-left">Lagos, Nigeria · Building openly</p>
+              <p className="mt-7 text-center text-xs uppercase tracking-[.2em] text-muted lg:text-left">Nigeria · Building openly</p>
             </div>
           </Reveal>
 
@@ -61,8 +61,8 @@ export default function About() {
               <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[.23em] text-cyan"><span className="h-px w-9 bg-cyan" />A deliberate transition</div>
               <h2 className="max-w-2xl font-display text-4xl leading-[.98] tracking-[-.045em] text-cloud sm:text-6xl">I am learning to make the complicated feel <span className="text-gradient">clear.</span></h2>
               <div className="mt-9 space-y-5 text-[15px] leading-8 text-muted sm:text-base">
-                <p>I finished my first degree, a BSc in Physics (Second Class Upper) at Lagos State University, in October 2025. After that, I started with Cyfrin&apos;s blockchain fundamentals and Solidity material.</p>
-                <p>I later moved into Web2 to strengthen my HTML, CSS, and JavaScript foundations, completing Web3Bridge&apos;s fully online Web2 Advanced Cohort XIV from January to April 2026. I am now in Web3Bridge Cohort XV, a 16-week intensive onsite Solidity engineering program in Lagos. I build in the open, write about what I learn, and compete in hackathons to sharpen my skills.</p>
+                <p>I graduated from Lagos State University with a BSc in Physics (Second Class Upper) in October 2025. After studying blockchain fundamentals and Solidity through Cyfrin, I committed to learning how production software is designed, tested and maintained.</p>
+                <p>I completed Web3Bridge Web2 Advanced Cohort XIV and joined its intensive Solidity Cohort XV. Since then I have shipped team and individual projects involving payment verification, smart contracts, security checks and full-stack workflows. In August 2026, my teams placed first at a Zcash mini hackathon and third in the EAG Hackathon HSK track. I have also merged contributions into Ethereum.org and Erigon.</p>
               </div>
               <div className="mt-10 grid grid-cols-2 gap-3 border-t border-line/80 pt-5 sm:grid-cols-4 sm:gap-4">
                 {stats.map(([value, label, Icon, suffix], index) => (
