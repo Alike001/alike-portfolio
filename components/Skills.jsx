@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-32 sm:py-40 lg:py-48">
       <div className="container-shell">
-        <Reveal><div className="mb-14 flex flex-col justify-between gap-7 border-b border-line/80 pb-8 sm:flex-row sm:items-end"><div><div className="mb-7 flex items-center gap-3 text-xs uppercase tracking-[.23em] text-cyan"><span className="h-px w-9 bg-cyan" />Tools I am using</div><h2 className="font-display text-4xl leading-none tracking-[-.05em] text-cloud sm:text-6xl">A growing <span className="text-gradient">toolkit.</span></h2></div><p className="max-w-xs text-sm leading-7 text-muted">Beginner to intermediate, with the strongest focus on smart contracts and the systems around them.</p></div></Reveal>
+        <Reveal><div className="mb-14 flex flex-col justify-between gap-7 border-b border-line/80 pb-8 sm:flex-row sm:items-end"><div><div className="mb-7 flex items-center gap-3 text-xs uppercase tracking-[.23em] text-cyan"><span className="h-px w-9 bg-cyan" />Tools I am using</div><h2 className="font-display text-4xl leading-none tracking-[-.05em] text-cloud sm:text-6xl">A growing <span className="text-gradient">toolkit.</span></h2></div><p className="max-w-xs text-sm leading-7 text-muted">A practical mix of frontend, backend, testing and smart-contract tools I use to build and verify software.</p></div></Reveal>
         <div className="grid gap-5 md:grid-cols-2">
           {skillGroups.map(({ label, icon: GroupIcon, skills }, groupIndex) => (
             <Reveal key={label} delay={groupIndex * .07} direction={groupIndex % 2 ? "right" : "left"}>

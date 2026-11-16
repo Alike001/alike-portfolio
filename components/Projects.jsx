@@ -1,41 +1,39 @@
-import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+"use client";
+
+import { motion } from "framer-motion";
+import { FiArrowUpRight, FiCheckCircle, FiUsers } from "react-icons/fi";
 import { projects } from "../data/projects";
 import Reveal from "./Reveal";
 
 export default function Projects() {
   return (
-    <section id="projects" className="border-y border-line/70 bg-card/20 py-20 sm:py-28">
+    <section id="projects" className="border-y border-line/50 bg-card/20 py-32 sm:py-40 lg:py-48">
       <div className="container-shell">
-        <Reveal>
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-5">
-            <div>
-              <p className="mb-4 text-xs uppercase tracking-[.22em] text-cyan">Selected work</p>
-              <h2 className="font-display text-4xl tracking-[-.05em] text-cloud sm:text-5xl">Projects worth exploring.</h2>
-            </div>
-            <a className="focus-ring inline-flex items-center gap-2 text-sm text-muted hover:text-cyan" href="https://github.com/Alike001" target="_blank" rel="noreferrer">More on GitHub <FiArrowUpRight /></a>
-          </div>
-        </Reveal>
-        <div className="grid gap-4 md:grid-cols-2">
+        <Reveal><div className="mb-14 grid gap-8 border-b border-line/80 pb-8 lg:grid-cols-[1fr_auto] lg:items-end"><div><div className="mb-7 flex items-center gap-3 text-xs uppercase tracking-[.23em] text-cyan"><span className="h-px w-9 bg-cyan" />Selected work</div><h2 className="font-display text-4xl leading-none tracking-[-.05em] text-cloud sm:text-6xl">Things I have <span className="text-gradient">shipped.</span></h2></div><div className="max-w-sm space-y-4 lg:text-right"><p className="text-sm leading-7 text-muted">Experiments, deployments, and collaborations that show how I am putting the fundamentals into practice.</p><p className="inline-flex items-center gap-2 text-xs font-medium text-amber-200 lg:justify-end"><FiCheckCircle />Team results · Zcash 1st place · EAG HSK 3rd place</p></div></div></Reveal>
+        <div className="grid grid-flow-dense gap-5 md:grid-cols-12">
           {projects.map((project, index) => (
-            <Reveal key={project.name} delay={index * .04}>
-              <article className="flex h-full flex-col rounded-[1.5rem] border border-line bg-card/65 p-6 transition-colors hover:border-cyan/40 sm:p-7">
-                <p className="text-[11px] uppercase tracking-[.16em] text-cyan">{project.category}</p>
-                <div className="mt-3 flex flex-wrap items-center gap-3">
-                  <h3 className="font-display text-2xl text-cloud sm:text-3xl">{project.name}</h3>
-                  {project.team && <span className="rounded-full border border-line px-2 py-1 text-[10px] text-muted">Team project</span>}
-                </div>
-                <p className="mt-4 text-sm leading-7 text-muted">{project.description}</p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.tech.map((item) => <span key={item} className="text-xs text-muted">{item}{item !== project.tech[project.tech.length - 1] ? " ·" : ""}</span>)}
-                </div>
-                <div className="mt-auto flex flex-wrap gap-6 border-t border-line/80 pt-5 text-sm">
-                  <a href={project.live} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 font-medium text-cloud hover:text-cyan">View project <FiArrowUpRight /></a>
-                  <a href={project.github} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 text-muted hover:text-cyan"><FiGithub /> Source</a>
-                </div>
-              </article>
+            <Reveal key={project.name} delay={index * .06} className={index === projects.length - 1 ? "md:col-span-12" : "md:col-span-6"}>
+              <motion.article whileHover={{ y: -6 }} transition={{ duration: .25, ease: "easeOut" }} className="group relative flex h-full min-h-[360px] flex-col overflow-hidden rounded-[1.6rem] border border-line bg-card p-6 transition-colors hover:border-indigo/60 hover:shadow-indigo sm:p-8">
+                <div className={`absolute -right-20 -top-20 h-52 w-52 rounded-full blur-3xl transition-opacity duration-500 group-hover:opacity-80 ${project.accent === "cyan" ? "bg-cyan/10" : "bg-indigo/15"}`} />
+                <div className="relative z-10 flex items-start justify-between gap-5"><div><p className="mb-3 text-[10px] uppercase tracking-[.2em] text-cyan">{project.eyebrow}</p><h3 className="font-display text-3xl tracking-[-.04em] text-cloud sm:text-4xl">{project.name}</h3></div><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line text-muted transition-colors group-hover:border-cyan/50 group-hover:text-cyan"><FiArrowUpRight /></span></div>
+                <p className="relative z-10 mt-7 max-w-xl text-sm leading-7 text-muted sm:text-base">{project.description}</p>
+                <div className="relative z-10 mt-auto pt-10"><div className="flex flex-wrap gap-2">{project.tech.map((tech) => <span key={tech} className="rounded-full border border-line bg-ink/60 px-3 py-1.5 text-[10px] uppercase tracking-[.08em] text-muted">{tech}</span>)}</div><div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-line/80 pt-5">{project.achievement ? <span className="inline-flex items-center gap-2 text-xs font-medium text-amber-200"><FiCheckCircle />{project.achievement}</span> : project.deployed ? <span className="text-xs text-muted">Deployed on <span className="text-cloud">{project.deployed}</span></span> : <span className="text-xs text-muted">{project.status || "Personal project"}</span>}{project.team && <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[.16em] text-indigo-200"><FiUsers />Team project</span>}<div className="flex flex-wrap items-center gap-4">{project.live && <a href={project.live} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 text-xs font-semibold text-cyan transition-colors hover:text-cloud">Live site <FiArrowUpRight /></a>}{project.github && <a href={project.github} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 text-xs font-semibold text-cloud transition-colors hover:text-cyan">Source code <FiArrowUpRight /></a>}</div></div></div>
+              </motion.article>
             </Reveal>
           ))}
         </div>
+        <Reveal delay={.12}>
+          <div className="mt-7 flex flex-col gap-4 rounded-[1.6rem] border border-line bg-card/45 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
+            <div>
+              <p className="mb-2 text-[10px] uppercase tracking-[.18em] text-cyan">Open-source contributions</p>
+              <p className="max-w-xl text-sm leading-7 text-muted">Merged pull requests in Ethereum.org and Erigon, including documentation clarity, CLI errors and CI test reliability.</p>
+            </div>
+            <div className="flex shrink-0 flex-wrap gap-x-5 gap-y-3">
+              <a href="https://github.com/ethereum/ethereum-org-website/pull/19742" target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 text-xs font-semibold text-cloud hover:text-cyan">Ethereum.org <FiArrowUpRight /></a>
+              <a href="https://github.com/erigontech/erigon/pull/26084" target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 text-xs font-semibold text-cloud hover:text-cyan">Erigon <FiArrowUpRight /></a>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

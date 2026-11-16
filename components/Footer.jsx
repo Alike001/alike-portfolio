@@ -2,7 +2,7 @@
 
 import { FiArrowUpRight } from "react-icons/fi";
 
-const nav = [["About", "about"], ["Work", "projects"], ["Recognition", "recognition"], ["Contact", "contact"]];
+const nav = [["About", "about"], ["Work", "projects"], ["Writing", "writing"], ["Contact", "contact"]];
 
 export default function Footer() {
   return (

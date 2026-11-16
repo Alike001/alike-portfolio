@@ -6,9 +6,10 @@ import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 
 const links = [
   ["About", "about"],
+  ["Journey", "journey"],
+  ["Skills", "skills"],
   ["Work", "projects"],
-  ["Recognition", "recognition"],
-  ["Contact", "contact"]
+  ["Writing", "writing"]
 ];
 
 export default function Navbar() {
