@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { FiAward, FiBookOpen, FiCode, FiGitBranch } from "react-icons/fi";
+import { FiAward, FiBookOpen, FiGitBranch } from "react-icons/fi";
 import Reveal from "./Reveal";
 
 const stats = [
