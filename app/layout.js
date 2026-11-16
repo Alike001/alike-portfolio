@@ -14,6 +14,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://iamalikex.tech"),
+  alternates: { canonical: "/" },
   title: "Hammed Ali Oyeleye (Alike) | Software & Web3 Engineer",
   description: "Portfolio of Hammed Ali Oyeleye: full-stack software, on-chain payment verification, Solidity, open-source contributions and award-winning team hackathon projects.",
   openGraph: {
