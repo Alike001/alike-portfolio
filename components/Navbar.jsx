@@ -76,7 +76,7 @@ export default function Navbar() {
         </nav>
 
         <button onClick={() => goTo("contact")} className="focus-ring hidden items-center gap-2 rounded-full bg-cloud px-4 py-2 text-xs font-semibold text-ink transition-transform hover:-translate-y-0.5 sm:flex">
-          Collaborate <FiArrowUpRight aria-hidden="true" />
+          Get in touch <FiArrowUpRight aria-hidden="true" />
         </button>
 
         <button onClick={() => setMenuOpen((value) => !value)} className="focus-ring grid h-10 w-10 place-items-center rounded-full border border-line text-cloud md:hidden" aria-label={menuOpen ? "Close menu" : "Open menu"}>
