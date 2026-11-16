@@ -2,48 +2,44 @@ import { FiBox, FiCode, FiCpu, FiGitBranch, FiGlobe, FiLayers, FiTerminal } from
 
 export const skillGroups = [
   {
-    label: "Languages and app development",
+    label: "Languages & frontend",
     icon: FiCode,
     skills: [
       ["JavaScript", FiCode],
       ["TypeScript", FiCode],
-      ["Node.js", FiCpu],
       ["React / Next.js", FiLayers],
       ["HTML / CSS", FiCode]
     ]
   },
   {
-    label: "Smart contracts and chains",
+    label: "Smart contracts",
     icon: FiBox,
     skills: [
       ["Solidity", FiCode],
       ["Foundry", FiBox],
       ["Hardhat", FiLayers],
-      ["ethers.js", FiBox],
-      ["Ethereum / Celo", FiGlobe],
-      ["HSK / Zcash / Nimiq", FiGlobe]
+      ["ethers.js", FiBox]
     ]
   },
   {
-    label: "Backend and verification",
+    label: "Backend & testing",
     icon: FiCpu,
     skills: [
+      ["Node.js", FiCpu],
       ["PostgreSQL", FiLayers],
-      ["REST APIs", FiCode],
-      ["Blockchain RPC", FiTerminal],
-      ["Automated testing", FiBox],
-      ["WebAuthn", FiCpu]
+      ["REST APIs", FiTerminal],
+      ["Automated tests", FiBox]
     ]
   },
   {
-    label: "Workflow and tooling",
-    icon: FiGitBranch,
+    label: "Tools & ecosystems",
+    icon: FiGlobe,
     skills: [
       ["Git / GitHub", FiGitBranch],
       ["GitHub Actions", FiGitBranch],
       ["Linux", FiTerminal],
-      ["MCP protocol", FiCpu],
-      ["Deployment", FiGlobe]
+      ["MCP", FiCpu],
+      ["Ethereum / Celo", FiGlobe]
     ]
   }
 ];
